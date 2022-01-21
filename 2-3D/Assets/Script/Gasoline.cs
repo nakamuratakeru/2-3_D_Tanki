@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI; 
 
-public class Gasolene : MonoBehaviour
+public class Gasoline : MonoBehaviour
 {
     public GameObject chara;
     public GameObject gameover;
@@ -17,7 +17,7 @@ public class Gasolene : MonoBehaviour
     void Update()
     {
         // ガソリン残量を減らす
-        _hp -= 0.006f;
+        _hp -= 0.020f;
         if (_hp < 0)
         {
             gameover.GetComponent<Text>();

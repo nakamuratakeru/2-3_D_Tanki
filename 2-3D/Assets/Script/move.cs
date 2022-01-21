@@ -16,29 +16,29 @@ public class move : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.position += transform.forward * 0.1f;
+            transform.position += transform.forward * 0.5f;
 
             if (Input.GetKey("right"))
             {
-                transform.Rotate(0, 0.2f, 0);
+                transform.Rotate(0, 0.4f, 0);
             }
             if (Input.GetKey("left"))
             {
-                transform.Rotate(0, -0.2f, 0);
+                transform.Rotate(0, -0.4f, 0);
             }
 
         }
         else if (Input.GetKey("s"))
         {
-            transform.position -= transform.forward * 0.1f;
+            transform.position -= transform.forward * 0.5f;
 
             if (Input.GetKey("right"))
             {
-                transform.Rotate(0, -2f, 0);
+                transform.Rotate(0, -0.4f, 0);
             }
             if (Input.GetKey("left"))
             {
-                transform.Rotate(0, 0.2f, 0);
+                transform.Rotate(0, 0.4f, 0);
             }
 
         }
