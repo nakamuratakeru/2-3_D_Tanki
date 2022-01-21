@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 125473243}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,7 +403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125473238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.5, y: 79.9, z: 506}
+  m_LocalPosition: {x: 73.5, y: 91, z: 506}
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48faa748254a2fe48aa5fe4b3063acb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chara: {fileID: 1937735655}
+  Chara: {fileID: 1937735655}
   gameclea: {fileID: 495946816}
 --- !u!1 &455336852
 GameObject:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GASOLENE
+  m_Text: GASOLINE
 --- !u!222 &1637320725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 1937735656}
   m_Layer: 0
   m_Name: Chara
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
