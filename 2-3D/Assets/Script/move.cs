@@ -77,7 +77,7 @@ public class move : MonoBehaviour
         else if (0 < Input.GetAxisRaw("Vertical"))
         {
             //下に傾いている
-            transform.position += transform.forward * 0.2f;
+            transform.position += transform.forward * 0.13f;
 
             if (Input.GetAxisRaw("Horizontal2") < 0)
             {
