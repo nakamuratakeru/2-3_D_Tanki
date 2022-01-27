@@ -19,11 +19,6 @@ public class Menu : MonoBehaviour
         {
             SceneManager.LoadScene("GameScene");
         }
-        bool Exitkettei = Input.GetKeyDown("joystick button 1");
-        if (Exitkettei == true)
-        {
-            Application.Quit();
-        }
     }
 }
     
