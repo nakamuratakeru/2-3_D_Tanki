@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
+    public AudioClip kettei;
+    AudioSource audioSource;
 
     void Start()
     {
-
+        //DontDestroyOnLoad(gameObject);
     }
     void Update()
     {
@@ -20,6 +22,7 @@ public class Title : MonoBehaviour
         bool Startkettei = Input.GetKeyDown("joystick button 0");
         if (Startkettei == true)
         {
+            GetComponent<AudioSource>().Play();     //音を再生
             SceneManager.LoadScene("Menu");
         }
     }
