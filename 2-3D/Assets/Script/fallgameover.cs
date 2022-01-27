@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class fallgameover : MonoBehaviour
 {
@@ -14,9 +15,8 @@ public class fallgameover : MonoBehaviour
 
             if (other.gameObject.tag == "GameOver")
             {
-                gameover.GetComponent<Text>();
-                gameover.SetActive(true);
-            }
+            SceneManager.LoadScene("GameOver");
+        }
         }
 
 }
