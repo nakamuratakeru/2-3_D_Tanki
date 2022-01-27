@@ -16,6 +16,8 @@ public class Gasolene : MonoBehaviour
     float _hp = 100;
     void Update()
     {
+        _hp = _slider.value;
+
         // ガソリン残量を減らす
         _hp -= 0.006f;
         if (_hp < 0)
