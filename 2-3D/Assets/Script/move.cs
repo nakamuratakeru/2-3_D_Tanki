@@ -60,13 +60,11 @@ public class move : MonoBehaviour
         //コントローラー操作
         if (Input.GetAxisRaw("Vertical") < 0)
         {
-<<<<<<< HEAD
-            transform.position += transform.forward * 1f;
-=======
+
             //上に傾いている
             transform.position -= transform.forward * 0.06f;
             GetComponent<AudioSource>().Play();     //音を再生
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
 
             //右stick
             if (Input.GetAxisRaw("Horizontal2") < 0)
@@ -76,53 +74,43 @@ public class move : MonoBehaviour
             }
             else if (0 < Input.GetAxisRaw("Horizontal2"))
             {
-<<<<<<< HEAD
-                transform.Rotate(0, 0.4f, 0);
-=======
+
                 //右に傾いている
                 transform.Rotate(0, -0.5f, 0);
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
             }
             else
             {
-<<<<<<< HEAD
-                transform.Rotate(0, -0.4f, 0);
-=======
+
                 //左右方向には傾いていない
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
             }
 
         }
         else if (0 < Input.GetAxisRaw("Vertical"))
         {
-<<<<<<< HEAD
-            transform.position -= transform.forward * 1f;
-=======
+
             //下に傾いている
             transform.position += transform.forward * 0.13f;
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
 
             if (Input.GetAxisRaw("Horizontal2") < 0)
             {
-<<<<<<< HEAD
-                transform.Rotate(0, -0.4f, 0);
-=======
+
                 //左に傾いている
                 transform.Rotate(0, -0.5f, 0);
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
             }
             else if (0 < Input.GetAxisRaw("Horizontal2"))
             {
-<<<<<<< HEAD
-                transform.Rotate(0, 0.4f, 0);
-=======
+
                 //右に傾いている
                 transform.Rotate(0, 0.5f, 0);
             }
             else
             {
                 //左右方向には傾いていない
->>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
+
             }
 
         }
