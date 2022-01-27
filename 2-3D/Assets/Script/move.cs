@@ -5,10 +5,15 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     private Animator animator;
+    public AudioClip engine;
+    AudioSource audioSource;
+
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
+        //Componentを取得
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,6 +61,7 @@ public class move : MonoBehaviour
         {
             //上に傾いている
             transform.position -= transform.forward * 0.06f;
+            GetComponent<AudioSource>().Play();     //音を再生
 
             //右stick
             if (Input.GetAxisRaw("Horizontal2") < 0)
