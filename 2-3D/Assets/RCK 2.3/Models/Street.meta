@@ -1,8 +1,19 @@
 fileFormatVersion: 2
 guid: 510a9898d73b5144bbfbd40efd2351aa
 folderAsset: yes
+<<<<<<< HEAD
 DefaultImporter:
   externalObjects: {}
+=======
+<<<<<<< HEAD
+timeCreated: 1450649261
+licenseType: Store
+DefaultImporter:
+=======
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> d21849a5228e2bebaa8fbbf5858d7bc997aecc0d
+>>>>>>> haruto
   userData: 
   assetBundleName: 
   assetBundleVariant: 

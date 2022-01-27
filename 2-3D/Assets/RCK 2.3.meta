@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9231c34cf173f8a4d963eb02b3b4f23a
+=======
+<<<<<<< HEAD
+guid: 9231c34cf173f8a4d963eb02b3b4f23a
+=======
+guid: 412d3e0f0a02cd4468bca43fd1b79068
+>>>>>>> d21849a5228e2bebaa8fbbf5858d7bc997aecc0d
+>>>>>>> haruto
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
