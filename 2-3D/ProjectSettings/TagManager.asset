@@ -8,6 +8,9 @@ TagManager:
   - GasolineStand
   - Street
   - Grass
+  - gameover
+  - GameOver
+  - Stand
   layers:
   - Default
   - TransparentFX
