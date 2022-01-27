@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.AI;
 
-public class Approach : MonoBehaviour
+public class carenemy : MonoBehaviour
 {
-
     CharacterController Controller;
     Transform Target;
     GameObject Player;
@@ -68,5 +67,68 @@ public class Approach : MonoBehaviour
     {
         InArea = true;
     }
+    //    public Transform[] points;
+    //    private int destpoint = 0;
+    //    private NavMeshAgent agent;
+    //    public GameObject target;
+    //    private bool inArea = false;
+    //    public float chaspeeed = 0.05f;
+    //    void Start()
+    //    {
+    //        agent = GetComponent<NavMeshAgent>();
+    //        agent.autoBraking = false;
+    //        GotoNextPoint();
+    //    }
 
+    //    // Update is called once per frame
+    //    void Update()
+    //    {
+    //        if(agent.remainingDistance < 0.5f)
+    //        {
+    //            GotoNextPoint();
+    //        }
+
+
+
+    //        if(inArea == true && target.activeInHierarchy == true)
+    //        {
+    //            agent.destination = target.transform.position;
+    //            //EneChasing();
+    //        }
+    //    }
+
+    //    void GotoNextPoint()
+    //    {
+    //        if (points.Length == 0)
+    //            return;
+
+    //        agent.destination = points[destpoint].position;
+    //        destpoint = (destpoint + 1) % points.Length;
+    //    }
+
+    //    private void OnTriggerEnter(Collider other)
+    //    {
+    //        if(other.gameObject.tag == "Player")
+    //        {
+    //            inArea = true;
+    //            target = other.gameObject;
+    //            //GetComponent<Renderer>().material.color = new Color(255f / 255f, 65f / 255f, 26f / 255f, 255f / 255f);
+    //            //EneChasing();
+    //        }
+    //    }
+
+    //    //private void OnTriggerExit(Collider other)
+    //    //{
+    //    //    if(other.gameObject.tag == "Player")
+    //    //    {
+    //    //        inArea = true;
+    //    //        GetComponent<Renderer>().material.color = origColor;
+    //    //        GotoNextPoint();
+    //    //    }
+    //    //}
+
+    //    //public void EneChasing()
+    //    //{
+    //    //    transform.position += transform.forward * chaspeeed;
+    //    //}
 }
