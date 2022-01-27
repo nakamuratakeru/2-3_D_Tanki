@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Goal
   - GasolineStand
+=======
+  - Object
+>>>>>>> 2b5c3dbc6809b62aab262a29fb0509b96b554eff
   layers:
   - Default
   - TransparentFX
