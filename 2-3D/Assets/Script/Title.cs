@@ -12,9 +12,10 @@ public class Title : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown("joystick button 1"))
+        if (Input.GetKeyDown("joystick button 1"))
         {
-            Debug.Log("button1");
+            Application.Quit();
+
         }
         bool Startkettei = Input.GetKeyDown("joystick button 0");
         if (Startkettei == true)

@@ -1,24 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class clear : MonoBehaviour
 {
-    //Inspectorでキャラクターとゴールオブジェクトの指定を出来る様にします。
     public GameObject chara;
-    public GameObject gameclea;
-
-
-    private void OnTriggerEnter(Collider other)
+    public GameObject gameclear;
+    public GameObject return_title;
+    
+    //プレイヤーが当たり判定に入った時の処理
+    void OnTriggerEnter(Collider other)
     {
-        //もしゴールオブジェクトのコライダーに接触した時の処理。
-        if (other.name == chara.name)
+        if (other.gameObject.tag == "Player")
         {
-            gameclea.GetComponent<Text>();
-            gameclea.SetActive(true);
-
+            SceneManager.LoadScene("GameClear");
+            //gameclear.GetComponent<Text>();
+            //gameclear.SetActive(true);
+            //return_title.GetComponent<Button>();
+            //return_title.SetActive(true);
+            //Debug.Log("当たってるyo");
         }
     }
-
 }
