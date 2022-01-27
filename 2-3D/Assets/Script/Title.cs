@@ -12,7 +12,7 @@ public class Title : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown("joystick button 1"))
+        if (Input.GetKeyDown("joystick button 1"))
         {
             Application.Quit();
 

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Gasoline : MonoBehaviour
 {
@@ -18,11 +19,10 @@ public class Gasoline : MonoBehaviour
     void Update()
     {
         // ガソリン残量を減らす
-        _hp -= 0.020f;
+        _hp -= 0.040f;
         if (_hp < 0)
         {
-            gameover.GetComponent<Text>();
-            gameover.SetActive(true);
+                SceneManager.LoadScene("GameOver");
         }
 
         // HPゲージに値を設定

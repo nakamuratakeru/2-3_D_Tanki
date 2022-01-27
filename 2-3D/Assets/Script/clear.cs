@@ -15,26 +15,12 @@ public class clear : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            gameclear.GetComponent<Text>();
-            gameclear.SetActive(true);
-            return_title.GetComponent<Button>();
-            return_title.SetActive(true);
+            SceneManager.LoadScene("GameClear");
+            //gameclear.GetComponent<Text>();
+            //gameclear.SetActive(true);
+            //return_title.GetComponent<Button>();
+            //return_title.SetActive(true);
             //Debug.Log("当たってるyo");
         }
     }
-    void Update()
-    {
-        if (Input.GetKeyDown("joystick button 1"))
-        {
-            Application.Quit();
-
-        }
-        bool Startkettei = Input.GetKeyDown("joystick button 0");
-        if (Startkettei == true)
-        {
-            SceneManager.LoadScene("title");
-        }
-    }
-
-
 }
