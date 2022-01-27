@@ -1,23 +1,40 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class clear : MonoBehaviour
 {
-    public GameObject Chara;
-    public GameObject gameclea;
-    void Start()
+    public GameObject chara;
+    public GameObject gameclear;
+    public GameObject return_title;
+    
+    //プレイヤーが当たり判定に入った時の処理
+    void OnTriggerEnter(Collider other)
     {
-       
-    }
-
-
-    void ONCollisonEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            gameclea.GetComponent<Text>();
-            gameclea.SetActive(true);
+            gameclear.GetComponent<Text>();
+            gameclear.SetActive(true);
+            return_title.GetComponent<Button>();
+            return_title.SetActive(true);
+            //Debug.Log("当たってるyo");
         }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown("joystick button 1"))
+        {
+            Application.Quit();
+
+        }
+        bool Startkettei = Input.GetKeyDown("joystick button 0");
+        if (Startkettei == true)
+        {
+            SceneManager.LoadScene("title");
+        }
+    }
+
+
 }

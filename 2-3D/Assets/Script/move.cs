@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class move : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class move : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.position += transform.forward * 0.5f;
+            transform.position += transform.forward * 1f;
 
             if (Input.GetKey("right"))
             {
@@ -30,7 +31,7 @@ public class move : MonoBehaviour
         }
         else if (Input.GetKey("s"))
         {
-            transform.position -= transform.forward * 0.5f;
+            transform.position -= transform.forward * 1f;
 
             if (Input.GetKey("right"))
             {
