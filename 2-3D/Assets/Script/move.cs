@@ -42,7 +42,6 @@ public class move : MonoBehaviour
         //    }
 
         //}
-
         //else if (Input.GetKey("d"))
         //{
         //    transform.position += transform.right * 0.01f;
