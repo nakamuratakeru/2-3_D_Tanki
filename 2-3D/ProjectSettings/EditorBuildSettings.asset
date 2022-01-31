@@ -14,8 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 8daa3593468c7154cbf429a1bd5864f6
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
+  - enabled: 0
+    path: Assets/RCK 2.3/Models/Street/Textures/Grass
     guid: 8a9b4efd63ce4824cbc7a2493f80524a
   - enabled: 0
     path: 
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/GameClear.unity
+    guid: fa0c6c074d7d69e4fafcf2b344fc2f38
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: ec3fe5d2a799c314bb90055f9738ecd4
   m_configObjects: {}

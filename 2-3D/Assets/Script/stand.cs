@@ -16,7 +16,7 @@ public class stand : MonoBehaviour
         _slider = GameObject.Find("Slider").GetComponent<Slider>();
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {

@@ -11,6 +11,7 @@ TagManager:
   - gameover
   - GameOver
   - Stand
+  - Enemy
   layers:
   - Default
   - TransparentFX
